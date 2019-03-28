@@ -101,8 +101,6 @@ class Data_Handler():
     if self.nb_train_samples is None:
       raise Exception("Please call the create_inputs_and_outputs function before creating the dataset")
 
-    # TODO: Need to check that the handling of Numpy-Arrays versus Tensorflow-Arrays are handled correctly!
-
     # 1) Create the dataset for Value Training
     # Scale the input values
     self.vt_scaler_x = StandardScaler()
